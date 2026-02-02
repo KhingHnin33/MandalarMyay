@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/ancient-gate-line.png" type="image/x-icon">
+
+    <!-- linking swiperjs css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- person icon from material icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Mandalar Myay</title>
+
+
+</head>
+
+<body>
+     
+       <header class="header ">
+        <nav class="nav container2">
+            <div class="nav_data">
+                <a href="Home.html" class="nav_logo">
+                    <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+                </a>
+
+                <div class="nav_items show-menu" id="nav_items">
+                    <ul class="nav_list">
+                        <li><a href="Home.html" class="nav_link">Home</a></li>
+                        <li><a href="About.html" class="nav_link">About</a></li>
+                        <li><a href="Attraction.html" class="nav_link">Attractions</a></li>
+                        <li><a href="Gallery.html" class="nav_link">Gallery</a></li>
+                        <li><a href="ContactUs.html" class="nav_link">ContactUs</a></li>
+
+                    </ul>
+                </div>
+                <!-- header nav right -->
+                <div class="head-right flex">
+                    <div class="search-box">
+                        <!-- Search Icon -->
+                        <div class="search-icon" id="searchToggle">
+                            <i class="ri-search-line"></i>
+                        </div>
+
+                        <!-- Dropdown Search Box -->
+                        <div class="search-dropdown" id="searchDropdown">
+                            <input type="text" placeholder="Search..." id="searchInput" />
+                            <button class="btn2">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="user-icon">
+                        <a href="SignInOut.html" class="flex user-signin">
+                            <span class="material-symbols-outlined user-icon-span">person</span>
+                            <p>Sign In</p>
+                        </a>
+
+                    </div>
+
+                    <div>
+                        <div class="nav_toggle show-icon" id="nav_toggle">
+                            <i class="ri-menu-line nav_menu"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!--header close-->
+    <!--Up Arrow-->
+    <div class="up-arrow-page">
+        <span class="up-arrow material-symbols-outlined">arrow_upward</span>
+    </div>    <!-- Menu Form --><div class="menuForm" id="menuForm">
+        <div class="menu-title-gap">
+            <p class="menu-title">QUICK ACCESS</p>
+
+        </div>
+
+        <div class="quick-menu">
+            <a href="Home.html">
+                <span class="material-symbols-outlined">home</span>
+                <h3 class="h3">Home</h3>
+            </a>
+            <a href="About.html">
+                <span class="material-symbols-outlined">info</span>
+                <h3 class="h3">AboutUs</h3>
+            </a>
+            <a href="Attraction.html">
+                <i class="ri-treasure-map-line"></i>
+                <h3 class="h3">Attractions</h3>
+            </a>
+            <a href="Gallery.html">
+                <i class="ri-article-line"></i>
+                <h3 class="h3">Gallery</h3>
+            </a>
+            <a href="ContactUs.html">
+                <span class="material-symbols-outlined">contact_support</span>
+                <h3 class="h3">ContactUs</h3>
+            </a>
+
+        </div>
+
+        <div class="other-menu">
+            <a href="Logout.html" class="logout-menu"><span class="material-symbols-outlined">logout</span>
+                <h3 class="h3">Logout</h3>
+            </a>
+
+            <a href="#"><span class="material-symbols-outlined">settings</span>
+                <h3 class="h3">Settings</h3>
+            </a>
+            <a href="#"><span class="material-symbols-outlined">help</span>
+                <h3 class="h3">Help</h3>
+            </a>
+            <a href="#"> <i class="ri-feedback-line"></i>
+                <h3 class="h3">Feedback</h3>
+            </a>
+
+             </div>
+    </div>
+
+    <!--menu Form close-->
+
+   
+    <section class="contact-box1 container1 top-margin flex3 gap2 margin11">
+        <div class="box1-content">
+            <div class="contact-box2">
+                <div class="contact-box2-center">
+                    <h2>Send us a message</h2>
+                    <form action="ContactUsServlet" method="post">
+                        <table>
+                            <tr class="contact-form">
+                                <td class="input-txt">
+                                    <input type="text" id="name" name="name" autocomplete="off" placeholder="Name" required>
+                                </td>
+                            </tr>
+                            <tr class="contact-form">
+                                <td class="input-txt">
+                                    <input type="email" name="email" autocomplete="off" placeholder="example@gmail.com" 
+                                        required>
+                                </td>
+                            </tr>
+                            <tr class="contact-form">
+                                <td class="input-txt">
+                                <input 
+                                    type="tel" 
+                                    name="ph" 
+                                    placeholder="09XXXXXXXXX (11 digits)" 
+                                    pattern="[0-9]{11}" 
+                                    title="Please enter exactly 11 digits"
+                                    required>
+                                                                    </td>
+                            </tr>
+                            <tr class="contact-form">
+                                <td class="input-txt">
+                                    <textarea name="message" autocomplete="off" rows="4" cols="36"
+                                        placeholder="Write your message here..." required></textarea>
+                                </td>
+                            </tr>
+                            <tr class="contact-form">
+                                <td class="input-btn">
+                                    <input type="submit" class="btn" value="SEND" name="phone" required>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="box2-content">
+            <div class="contact-txt1">
+                <img src="./img/quotations.png" style="width: 30px; margin-right: 10px;" alt="">
+                <i class="txt1">CONTACT DETAILS</i>
+            </div>
+            <h2>Visit Mandalay – Grace of the Past</h2>
+            <p class="margin2">Mandalay, the former royal capital of Myanmar is a worthwhile destination for travelers
+                seeking both history and natural beauty.
+            </p>
+            <div class="flex-content">
+                <div class="flex-content1 flex1 ">
+                    <i class="fi fi-ss-land-location icon2 pad1"></i>
+                    <div class="img-name">
+                        <h4>Address</h4>
+                        <small>
+                            Patheingyi, Mandalay</small>
+                    </div>
+                </div>
+                <div class="flex-content1 flex1 margin3">
+                    <i class="fi fi-ss-envelope icon2 pad1"></i>
+                    <div class="img-name">
+                        <h4>Email Support</h4>
+                        <small>
+                            adminHnin@gmail.com</small>
+                    </div>
+                </div>
+                <div class="flex-content1 flex1 margin3">
+                    <i class="ri-phone-line icon1 pad1"></i>
+                    <div class="img-name">
+                        <h4>Call us</h4>
+                        <small> Phone : +95978XXXXXXX
+                            </small>
+                    </div>
+                </div>
+                <div class="flex-content1 flex1 margin3">
+                    <i class="ri-time-line icon1 pad1"></i>
+                    <div class="img-name">
+                        <h4>Office Hours</h4>
+                        <small>Mon - Fri : 8:00 PM - 12:00 AM
+                            <br>Sat- Sun : Close</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- footer starts -->
+    <footer>
+        <div class="footer-items">
+
+            <div class="foot-links">
+                <div class="foot-box">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-ul">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Attraction.html">Attractions</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="ContactUs.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <h3>Contact Us</h3>
+
+                    <ul class="contact-ul">
+                        <li>
+                            <a>
+                                <i class="ri-map-pin-line"></i>Mandalay Technological University
+                            </a>
+                        </li>
+                        <li>
+
+                            <a>
+                                <i class="ri-chat-ai-line"></i> +959XXXXXXXXX
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="ri-mail-unread-line"></i> admin@gmail.com
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <h3>Resources</h3>
+                    <ul class="resource-ul">
+                        <li>Customer Support</li>
+                        <li>Share your story</li>
+                        <li>Communities</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <div class="newsletter">
+                        <h4>WANT OUR BEST TRAVEL PLANS?</h4>
+                        <p>We send out our best plans in a weekly newsletter</p>
+
+                        <form onsubmit="event.preventDefault(); 
+                        this.reset();
+                        document.querySelector('.btn3').textContent = '✅ Subscribed!';
+
+                        alert(' ˚.🎀༘⋆ Thank you for subscribing! ˚.🎀༘⋆ \n\nမန္တလေးနှင့် ပတ်သက်သော အချက်အလက်များကို အပတ်စဉ် တစ်ပတ်လျှင် တစ်ကြိမ် သင့်အီးမေးလ်သို့ ပို့ပေးပါမည်။');
+                        setTimeout(() => {
+                            document.querySelector('.btn3').textContent = 'Subscribe';
+                        }, 5000);   
+                            ">
+                            <input type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+                            <button class="btn3 flex" type="submit"><i class="ri-telegram-2-line">
+                                </i>
+                                <span class="p1">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-logo">
+                <a href="" class="sub-logo2">
+                    <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+                </a>
+                <div class="foot-icons">
+                    <i class="ri-facebook-box-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-line"></i>
+                    <i class="ri-youtube-fill"></i>
+                    <i class="ri-tiktok-fill"></i>
+                </div>
+            </div>
+            <div class="last-foot">
+                <p>ⓒ 2026 Mandalar Myay. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

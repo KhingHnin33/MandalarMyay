@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* ===========Gallery css============= */
+.gallery-search {
+    position: relative;
+    height: 40vh;
+}
+
+.gallery-search img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-search .gallery-content {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    top: 30%;
+    left: 32%;
+    text-align: center;
+}
+
+.gallery-search .gallery-content p {
+    color: #fff;
+}
+
+.gallery-search h1 {
+    font-size: 2.65rem;
+}
+
+.gallery-search p {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.gallery-search .gallery-search-box {
+    height: 45px;
+    margin: 20px 0;
+    position: relative;
+}
+
+
+input,
+button,
+i {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.gallery-search-box input {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: 55px;
+    border-radius: 5px;
+}
+
+.gallery-search-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    font-size: 1.2rem;
+    color: #8d8d8d;
+    transform: translateY(-50%);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.gallery .images {
+    column-gap: 15px;
+    column-count: 4;
+    margin-top: 40px;
+    max-width: 95%;
+}
+
+.images .card {
+    display: flex;
+    position: relative;
+    break-inside: avoid;
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+/* buttons */
+.gallery .btn2 {
+    margin: 50px 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 11px 27px;
+    background-color: #1774af;
+    font-weight: 500;
+}
+
+.images .card .gallery-details {
+    transition: bottom 0.4s ease;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.images .card:hover .gallery-details {
+    bottom: 0;
+}
+
+.img-title i {
+    font-size: 1.4rem;
+    margin-right: 3px;
+}
+
+.img-title span {
+    font-size: 1rem;
+    padding-top: .4rem;
+}
+
+.img-title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.gallery-details button {
+    cursor: pointer;
+    padding: 3px 8px;
+    font-size: 1.1rem;
+    background-color: #fff;
+}
+
+/* image preview */
+.previewbox {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.previewbox .preview-wrapper {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 850px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preview-wrapper .preview-img .preimg {
+    max-height: 70vh;
+    max-width: 65vh;
+}
+
+.preimg img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.preview-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.preview-wrapper header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .img-title i {
+    font-size: 1.4rem;
+}
+
+header .img-title span {
+    font-size: 1.03rem;
+}
+
+header .img-title {
+    color: #333;
+}
+
+header .buttons i {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    display: inline-block;
+    background-color: #e8e1e1;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.buttons i:last-child {
+    margin-left: 10px;
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.buttons {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    z-index: 10;
+    padding-right: 20px;
+}
+
+/* =======Gallery end ========== */

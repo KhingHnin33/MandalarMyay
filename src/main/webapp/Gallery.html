@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./img/programming.png"
+	type="image/x-icon">
+<link
+	href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+	rel="stylesheet" />
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- linking swiperjs css -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<!-- person icon from material icons -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<title>Mandalar Myay</title>
+
+</head>
+
+<body>
+	<header class="header ">
+		<nav class="nav container2">
+			<div class="nav_data">
+				<a href="Home.html" class="nav_logo"> <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+				</a>
+
+				<div class="nav_items show-menu" id="nav_items">
+					<ul class="nav_list">
+						<li><a href="Home.html" class="nav_link">Home</a></li>
+						<li><a href="About.html" class="nav_link">About</a></li>
+						<li><a href="Attraction.html" class="nav_link">Attractions</a></li>
+						<li><a href="Gallery.html" class="nav_link">Gallery</a></li>
+						<li><a href="ContactUs.html" class="nav_link">ContactUs</a></li>
+
+					</ul>
+				</div>
+				<!-- header nav right -->
+				<div class="head-right flex">
+					<div class="search-box">
+						<!-- Search Icon -->
+						<div class="search-icon" id="searchToggle">
+							<i class="ri-search-line"></i>
+						</div>
+
+						<!-- Dropdown Search Box -->
+						<div class="search-dropdown" id="searchDropdown">
+							<input type="text" placeholder="Search..." id="searchInput" />
+							<button class="btn2">Search</button>
+						</div>
+					</div>
+
+					<div class="user-icon">
+						<a href="SignInOut.html" class="flex user-signin"> <span
+							class="material-symbols-outlined user-icon-span">person</span>
+							<p>Sign In</p>
+						</a>
+
+					</div>
+
+					<div>
+						<div class="nav_toggle show-icon" id="nav_toggle">
+							<i class="ri-menu-line nav_menu"></i>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+	<!--header close-->
+	<!--Up Arrow-->
+	<div class="up-arrow-page">
+		<span class="up-arrow material-symbols-outlined">arrow_upward</span>
+	</div>
+	<!-- Menu Form -->
+	<div class="menuForm" id="menuForm">
+		<div class="menu-title-gap">
+			<p class="menu-title">QUICK ACCESS</p>
+
+		</div>
+
+		<div class="quick-menu">
+			<a href="Home.html"> <span class="material-symbols-outlined">home</span>
+				<h3 class="h3">Home</h3>
+			</a> <a href="About.html"> <span class="material-symbols-outlined">info</span>
+				<h3 class="h3">AboutUs</h3>
+			</a> <a href="Attraction.html"> <i class="ri-treasure-map-line"></i>
+				<h3 class="h3">Attractions</h3>
+			</a> <a href="Gallery.html"> <i class="ri-article-line"></i>
+				<h3 class="h3">Gallery</h3>
+			</a> <a href="ContactUs.html"> <span
+				class="material-symbols-outlined">contact_support</span>
+				<h3 class="h3">ContactUs</h3>
+			</a>
+
+		</div>
+
+		<div class="other-menu">
+			<a href="Logout.html" class="logout-menu"><span
+				class="material-symbols-outlined">logout</span>
+				<h3 class="h3">Logout</h3> </a> <a href="#"><span
+				class="material-symbols-outlined">settings</span>
+				<h3 class="h3">Settings</h3> </a> <a href="#"><span
+				class="material-symbols-outlined">help</span>
+				<h3 class="h3">Help</h3> </a> <a href="#"> <i
+				class="ri-feedback-line"></i>
+				<h3 class="h3">Feedback</h3>
+			</a>
+
+		</div>
+	</div>
+
+	<!--menu Form close-->
+
+	<!-- Preview img box -->
+	<div class="previewbox">
+		<div class="preview-wrapper">
+			<header>
+
+				<div class="img-title">
+					<i class="ri-ancient-gate-line"></i> <span>မန္တလာမြေ</span>
+
+				</div>
+				<div class="buttons-download">
+					<i class="ri-download-2-line"></i> <i class="ri-close-fill"></i>
+				</div>
+
+			</header>
+			<div class="preview-img">
+				<div class="preimg">
+					<img src="./img/kuthodaw (2).jpg" alt="preview-img">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- search box -->
+	<section class="gallery-search">
+		<img src="./img/ubein13.jpg" alt="search-img">
+		<div class="gallery-content">
+			<h1>Mandalay Image Gallery</h1>
+			<p>Search and download any images within a second</p>
+			<div class="gallery-search-box">
+				<i class="ri-search-line"></i> <input type="text"
+					placeholder="Search images">
+			</div>
+		</div>
+	</section>
+	<section class="gallery">
+		<ul class="images">
+			<!-- Mahar  -->
+			<li class="card" data-tags="maharmyatmuni monastery teak"><img
+				src="./img/mahar0.jpg" alt="maharmyatmuni Dhamma Monastery">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/mahar0.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Bargaya Monastery -->
+			<li class="card" data-tags="bargaya monastery teak ancient"><img
+				src="./img/bargayaa.webp" alt="Bargaya Monastery">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဗားကရာ
+							ဘုန်းကြီးကျောင်း</span>
+					</div>
+					<button class="download-btn" data-src="./img/bargayaa.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Maha Myat Muni Pagoda -->
+			<li class="card"
+				data-tags="maha myat muni pagoda buddha image golden"><img
+				src="./img/maha-myat-muni-pagoda.jpg" alt="Maha Myat Muni Pagoda">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိဘုရား</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/maha-myat-muni-pagoda.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw Pagoda 1 -->
+			<li class="card"
+				data-tags="kuthodaw pagoda marble steles world's largest book">
+				<img src="./img/kuthodaw (2).jpg" alt="Kuthodaw Pagoda">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw (2).jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Kuthodaw Pagoda 2 -->
+			<li class="card" data-tags="kuthodaw pagoda golden stupa"><img
+				src="./img/kuthodaw-pagoda (1).jpg" alt="Kuthodaw Pagoda Stupa">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/kuthodaw-pagoda (1).jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw Pagoda 3 -->
+			<li class="card" data-tags="kuthodaw pagoda courtyard"><img
+				src="./img/kuthodaw-pagoda (5).jpg" alt="Kuthodaw Pagoda Courtyard">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/kuthodaw-pagoda (5).jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Mandalay Palace -->
+			<li class="card" data-tags="palace royal mandalay fort"><img
+				src="./img/mdy_palace.webp" alt="Mandalay Palace">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေး နန်းတော်</span>
+					</div>
+					<button class="download-btn" data-src="./img/mdy_palace.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw Main View -->
+			<li class="card" data-tags="kuthodaw pagoda panoramic"><img
+				src="./img/kuthodaw.jpg" alt="Kuthodaw Pagoda Panoramic View">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Zay Cho Market 1 -->
+			<li class="card" data-tags="zay cho market local street"><img
+				src="./img/zay-cho-mandalay.jpg" alt="Zay Cho Market Mandalay">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဈေးချိုဈေး</span>
+					</div>
+					<button class="download-btn" data-src="./img/zay-cho-mandalay.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Zay Cho Market 2 -->
+			<li class="card" data-tags="zay cho market vendors"><img
+				src="./img/zaycho1.jpg" alt="Zay Cho Market Vendors">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဈေးချိုဈေး</span>
+					</div>
+					<button class="download-btn" data-src="./img/zaycho3.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- General Mandalay Scene -->
+			<li class="card" data-tags="mandalay street city view"><img
+				src="./img/photo2jpg (2).jpg" alt="Mandalay City Street">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေးမြို့</span>
+					</div>
+					<button class="download-btn" data-src="./img/photo2jpg (2).jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw Close-up -->
+			<li class="card" data-tags="kuthodaw pagoda detail"><img
+				src="./img/kuthodaw2.webp" alt="Kuthodaw Pagoda Detail">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw2.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw Sunset -->
+			<li class="card" data-tags="kuthodaw pagoda sunset golden hour">
+				<img src="./img/kuthodaw3.jpg" alt="Kuthodaw Pagoda at Sunset">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw3.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+			<!-- Rubber Shop Bins -->
+			<li class="card"
+				data-tags="rubber shop recycling bins mandalay street"><img
+				src="./img/rubber-shop-making-bins.jpg"
+				alt="Rubber Shop Making Bins in Mandalay">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>စျေးချိုရှိ
+							စျေးဆိုင်များ</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/rubber-shop-making-bins.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- The Glass Palace of Mandalay -->
+			<li class="card" data-tags="glass palace royal mandalay history">
+				<img src="./img/The_Glass_Palace_of_Mandalay.jpg"
+				alt="The Glass Palace of Mandalay">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေးရွှေနန်းတော်</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/The_Glass_Palace_of_Mandalay.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- U Bein Bridge 5 -->
+			<li class="card" data-tags="ubein bridge teak longest bridge sunset">
+				<img src="./img/ubein5.webp" alt="U Bein Bridge at Sunset">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဦးပိန်တံတား</span>
+					</div>
+					<button class="download-btn" data-src="./img/ubein5.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Mandalay Palace -->
+			<li class="card" data-tags="palace royal fort mandalay nandaw">
+				<img src="./img/palace.webp" alt="Mandalay Palace">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေး နန်းတော်</span>
+					</div>
+					<button class="download-btn" data-src="./img/palace.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Mandalay Central Station -->
+			<li class="card" data-tags="train station mandalay central railway">
+				<img src="./img/Mandalay_Central_Station.JPG"
+				alt="Mandalay Central Railway Station">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေး ဘူတာကြီး</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/Mandalay_Central_Station.JPG">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Hsinbyume Pagoda -->
+			<li class="card" data-tags="hsinbyume pagoda myatheindan white waves">
+				<img src="./img/hsinbyume.jpg" alt="Hsinbyume Pagoda (Myatheindan)">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မြသိန်းတန်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/hsinbyume.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Kuthodaw Pagoda Main -->
+			<li class="card"
+				data-tags="kuthodaw pagoda world's largest book marble"><img
+				src="./img/kuthodaw.jpg" alt="Kuthodaw Pagoda">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- U Bein Bridge 13 -->
+			<li class="card" data-tags="ubein bridge mandalay amarapura sunset">
+				<img src="./img/ubein13.jpg" alt="U Bein Bridge View">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဦးပိန်တံတား</span>
+					</div>
+					<button class="download-btn" data-src="./img/ubein13.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Yak Kan (Traditional Snack) -->
+			<li class="card" data-tags="yak kan snack street food mandalay">
+				<img src="./img/yak kan.jpg" alt="Yak Kan Traditional Snack">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မြန်မာ့ရက်ကန်း</span>
+					</div>
+					<button class="download-btn" data-src="./img/yak kan.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Mandalay Hill 3 -->
+			<li class="card" data-tags="mandalay hill panoramic view temple">
+				<img src="./img/Mandalay_Hill_3.jpg" alt="View from Mandalay Hill">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေးတောင်</span>
+					</div>
+					<button class="download-btn" data-src="./img/Mandalay_Hill_3.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Mandalay Palace Tower -->
+			<li class="card" data-tags="palace tower mandalay fort royal"><img
+				src="./img/mandalay-palace-torre.jpg" alt="Mandalay Palace Tower">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>နန်းမြင့်</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/mandalay-palace-torre.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Mahamuni Image -->
+			<li class="card" data-tags="mahamuni buddha image golden face">
+				<img src="./img/Mahamuni_Image.JPG" alt="Mahamuni Buddha Image">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမုနိ
+							ဗုဒ္ဓရုပ်ပွားတော်</span>
+					</div>
+					<button class="download-btn" data-src="./img/Mahamuni_Image.JPG">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Mahar Aung Myin 12 -->
+			<li class="card" data-tags="mahar aung myin monastery teak wood">
+				<img src="./img/mahar12.jpg"
+				alt="Mahar Aung Myin Monastery Interior">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိ </span>
+					</div>
+					<button class="download-btn" data-src="./img/mahar12.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- Kuthodaw (2) -->
+			<li class="card" data-tags="kuthodaw pagoda steles courtyard"><img
+				src="./img/kuthodaw (2).jpg" alt="Kuthodaw Pagoda Courtyard">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw (2).jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Jade Pagoda -->
+			<li class="card" data-tags="jade pagoda sakkina gemstone"><img
+				src="./img/Jade_Pagoda.jpg" alt="Jade Pagoda (Sakkina)">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>
+							ကျောက်စိမ်းဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/Jade_Pagoda.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Mahar Logo/Art -->
+			<li class="card" data-tags="mahar art logo design"><img
+				src="./img/mahara.png" alt="Mahar Art or Logo">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိ</span>
+					</div>
+					<button class="download-btn" data-src="./img/mahara.png">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Kuthodaw 1 -->
+			<li class="card" data-tags="kuthodaw pagoda golden stupa"><img
+				src="./img/kuthodaw1.webp" alt="Kuthodaw Pagoda Stupa">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ကုသိုလ်တော်ဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/kuthodaw1.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Mahar 1 -->
+			<li class="card" data-tags="mahar monastery architecture"><img
+				src="./img/mahar1.JPG" alt="Mahar Aung Myin Monastery Exterior">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိ</span>
+					</div>
+					<button class="download-btn" data-src="./img/mahar1.JPG">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Mahar 3 -->
+			<li class="card" data-tags="mahar interior teak carving"><img
+				src="./img/mahar3.jpg" alt="Mahar Monastery Interior Carvings">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မဟာမြတ်မုနိဘုရား</span>
+					</div>
+					<button class="download-btn" data-src="./img/mahar3.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- King Statue -->
+			<li class="card" data-tags="king mindon statue mandalay royal">
+				<img src="./img/king.jpg" alt="King Mindon Statue">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မင်းတုန်းမင်း
+							ရုပ်ထု</span>
+					</div>
+					<button class="download-btn" data-src="./img/king.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- U Bein 10 -->
+			<li class="card" data-tags="ubein bridge amarapura walking"><img
+				src="./img/ubein10.jpg" alt="People Walking on U Bein Bridge">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဦးပိန်တံတား</span>
+					</div>
+					<button class="download-btn" data-src="./img/ubein10.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Zaycho Market 1 -->
+			<li class="card" data-tags="zay cho market street vendors"><img
+				src="./img/zaycho1.jpg" alt="Zay Cho Market Vendors">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဈေးချိုဈေး</span>
+					</div>
+					<button class="download-btn" data-src="./img/zaycho1.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Zegyo Market -->
+			<li class="card" data-tags="zegyo market mandalay largest market">
+				<img src="./img/zegyo-market.jpg" alt="Zegyo Market Entrance">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>စျေးချိုတော်</span>
+					</div>
+					<button class="download-btn" data-src="./img/zegyo-market.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div>
+			</li>
+
+			<!-- ZZ5 (Local Scene) -->
+			<li class="card" data-tags="mandalay street local life"><img
+				src="./img/zz5.png" alt="Mandalay Street Scene">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေးစျေးချိုဆိုင်များ</span>
+					</div>
+					<button class="download-btn" data-src="./img/zz5.png">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- U Bein 4 -->
+			<li class="card" data-tags="ubein bridge reflection water"><img
+				src="./img/ubein4.webp" alt="U Bein Bridge Reflection">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဦးပိန်တံတား</span>
+					</div>
+					<button class="download-btn" data-src="./img/ubein4.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- U Bein 6 -->
+			<li class="card" data-tags="ubein bridge sunrise morning"><img
+				src="./img/ubein6.webp" alt="U Bein Bridge at Sunrise">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>ဦးပိန်တံတား</span>
+					</div>
+					<button class="download-btn" data-src="./img/ubein6.webp">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+			<!-- Scenes from Mandalay -->
+			<li class="card" data-tags="mandalay city life culture"><img
+				src="./img/scenes-from-mandalay.jpg"
+				alt="Scenes from Mandalay City Life">
+				<div class="gallery-details">
+					<div class="img-title">
+						<i class="ri-ancient-gate-line"></i> <span>မန္တလေး
+							မြင်ကွင်းများ</span>
+					</div>
+					<button class="download-btn"
+						data-src="./img/scenes-from-mandalay.jpg">
+						<i class="ri-download-2-line"></i>
+					</button>
+				</div></li>
+
+
+
+		</ul>
+
+	</section>
+	<!-- Gallery start -->
+
+
+	<!-- footer starts -->
+	<footer>
+		<div class="footer-items">
+
+			 <div class="foot-links">
+                <div class="foot-box">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-ul">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Attraction.html">Attractions</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="ContactUs.html">Services</a></li>
+                    </ul>
+                </div>
+				<div class="foot-box">
+					<h3>Contact Us</h3>
+
+					<ul class="contact-ul">
+						<li><a> <i class="ri-map-pin-line"></i>Mandalay
+								Technological University
+						</a></li>
+						<li><a> <i class="ri-chat-ai-line"></i> +959XXXXXXXXX
+						</a></li>
+						<li><a> <i class="ri-mail-unread-line"></i>
+								admin@gmail.com
+						</a></li>
+
+					</ul>
+				</div>
+				<div class="foot-box">
+					<h3>Resources</h3>
+					<ul class="resource-ul">
+						<li>Customer Support</li>
+						<li>Share your story</li>
+						<li>Communities</li>
+						<li>Blog</li>
+					</ul>
+				</div>
+				<div class="foot-box">
+					<div class="newsletter">
+						<h4>WANT OUR BEST TRAVEL PLANS?</h4>
+						<p>We send out our best plans in a weekly newsletter</p>
+
+						<form
+							onsubmit="event.preventDefault(); 
+                        this.reset();
+                        document.querySelector('.btn3').textContent = '✅ Subscribed!';
+
+                        alert(' ˚.🎀༘⋆ Thank you for subscribing! ˚.🎀༘⋆ \n\nမန္တလေးနှင့် ပတ်သက်သော အချက်အလက်များကို အပတ်စဉ် တစ်ပတ်လျှင် တစ်ကြိမ် သင့်အီးမေးလ်သို့ ပို့ပေးပါမည်။');
+                        setTimeout(() => {
+                            document.querySelector('.btn3').textContent = 'Subscribe';
+                        }, 5000);   
+                            ">
+							<input type="email" placeholder="Enter your email" name="email"
+								autocomplete="off" required>
+							<button class="btn3 flex" type="submit">
+								<i class="ri-telegram-2-line"> </i> <span class="p1">Subscribe</span>
+							</button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer-logo">
+				<a href="" class="sub-logo2"> <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+				</a>
+				<div class="foot-icons">
+					<i class="ri-facebook-box-fill"></i> <i class="ri-twitter-fill"></i>
+					<i class="ri-linkedin-box-line"></i> <i class="ri-youtube-fill"></i>
+					<i class="ri-tiktok-fill"></i>
+				</div>
+			</div>
+			<div class="last-foot">
+				<p>ⓒ 2026 Mandalar Myay. All rights reserved.</p>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- Swiper JS -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/gallery.js" defer></script>
+
+</body>
+</html>

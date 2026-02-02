@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/programming.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/ancient-gate-line.png" type="image/x-icon">
+    <!-- person icon from material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <title>Mandalar Myay</title>
+   <style>
+    /* =====index. html================= */
+/* MEDIA QUERIES */
+@media screen and (max-width:1344px) {
+    .search-dropdown::before { right: 140px; }
+}
+
+@media screen and (max-width:1200px) {
+    .search-dropdown::before { right: 100px; }
+}
+
+@media screen and (max-width:1190px) {
+    .nav_link { font-size: 16px; font-weight: 500; padding: 0rem 1rem; }
+    .search-dropdown::before { right: 130px; }
+    .welcomeimg-content .pic1 { left: 20%; width: 200px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 42%; width: 260px; height: 200px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 200px; height: 160px; }
+    .pin1 { left: 27%; }
+    .pin2 { left: 52%; }
+    .pin3 { left: 76%; }
+}
+
+@media screen and (max-width:1049px) {
+    .welcomeimg-content .pic1 { left: 20%; width: 160px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 40%; width: 240px; height: 200px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 160px; height: 160px; }
+    .pin1 { left: 26%; }
+    .pin2 { left: 50%; }
+    .pin3 { left: 74%; }
+}
+
+@media screen and (max-width:992px) {
+    .welcome-title { top: 20%; left: 50%; transform: translateX(-50%); }
+    .welcome-title p { width: 400px; font-size: 12px; }
+    .welcome-title span { font-size: 2.2rem; }
+    .explore-btn { top: 38%; left: 50%; transform: translateX(-50%); font-size: 15px; padding: 6px 25px; }
+}
+
+@media screen and (max-width:980px) {
+    .search-icon, .save-icon, .user-icon, .nav_toggle { width: 35px; height: 40px; }
+    .nav_link { padding: 0 .7rem; font-size: 16px; }
+    .search-icon i, .save-icon span, .nav_toggle i { font-weight: 300; }
+    .user-icon span { font-weight: 400; }
+    .search-dropdown::before { right: 100px; }
+    .welcomeimg-content .pic1 { left: 20%; width: 160px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 40%; width: 230px; height: 200px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 160px; height: 160px; }
+    .pin1 { left: 28%; }
+    .pin2 { left: 51%; }
+    .pin3 { left: 76%; }
+}
+
+@media screen and (max-width:820px) {
+    .nav_list { display: none; }
+    .nav_toggle { display: flex; align-items: center; justify-content: center; }
+    .search-icon i, .nav_toggle i { font-size: 1.3rem; }
+    .save-icon span, .user-icon span { font-size: 1.5rem; }
+    .search-dropdown::before { right: 130px; }
+    .welcomeimg-content .pic1 { left: 20%; width: 150px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 41%; width: 200px; height: 200px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 150px; height: 160px; }
+}
+
+@media screen and (max-width:768px) {
+    .logo-p { font-size: 15px; }
+    .nav_logo .logo-i { font-size: 27px; }
+    .nav_logo { justify-content: start; padding-left: 30px; }
+    .explore-btn { top: 36%; font-size: 14px; padding: 6px 20px; }
+    .welcomeimg-content .pic1 { left: 6%; width: 150px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 32%; width: 220px; height: 190px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 150px; height: 160px; }
+    .pin1 { left: 15%; }
+    .pin2 { left: 47%; }
+    .pin3 { left: 77%; }
+}
+
+@media screen and (max-width:680px) {
+   
+    .search-dropdown::before { right: 120px; }
+    .welcomeimg-content .pic1 { left: 6%; width: 140px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 33%; width: 200px; height: 190px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 140px; height: 160px; }
+    .pin1 { left: 17%; }
+    .pin2 { left: 48%; }
+    .pin3 { left: 79%; }
+}
+
+@media screen and (max-width:660px) {
+     
+    .welcomeimg-content .pic1 { left: 6%; width: 125px; height: 160px; }
+    .welcomeimg-content .pic2 { left: 33%; width: 160px; height: 190px; }
+    .welcomeimg-content .pic3 { left: 68%; width: 126px; height: 160px; }
+    .pin1 { left: 17%; }
+    .pin2 { left: 48%; }
+    .pin3 { left: 79%; }
+}
+
+@media screen and (max-width:600px) {
+      .welcome-title { top: 20%;     width: 372px; }
+    .welcome-title p { width: 360px; font-size: 12px; }
+    .welcome-title span { font-size: 2rem; }
+
+
+}
+
+
+   </style>
+</head>
+
+<body class="hidden">
+    <header class="welcome-header">
+       
+            <div class="welcome-logo">
+                <a href="Home.html" class="nav_logo">
+                    <i class="ri-ancient-gate-line logo-i"></i>
+                    <p class="logo-p">မန္တလာမြေ</p>
+                </a>
+            </div>
+    </header>
+    <div class="welcome-page">
+        <img src="./img/bg101.jpg" alt="welcome-page" class="welcome-img">
+    </div>
+    <div class="welcome-content">
+        <div class="welcome-title">
+            <h1>Discover <span>MANDALAY</span></h1>
+            <p class="white">မန္တလေး၏  ရွှေရောင်တောက်ပသော တော်ဝင်နန်းတော်များနှင့် ရှေးဟောင်းဘုရားကျောင်းများတို့ဖြင့် မြန်မာ့ယဉ်ကျေးမှုအမွေအနှစ်၊ ဓလေ့ထုံးတမ်းနှင့် ငြိမ်းချမ်းသော အလှတရားတို့ကို  ရှာဖွေရန် စတင်လိုက်ပါ။</p>
+        </div>
+        <a href="Home.html" class="explore-btn">
+                Get Started
+                <span class="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+
+        <div class="welcomeimg-content">
+            <a href="" class="nav_logo">
+                    <i class="ri-ancient-gate-line logo-i"></i>
+                    <p class="logo-p">မန္တလာမြေ</p>
+                </a>
+            <div class="imgtop">
+                 <img src="./img/pin1.png" alt="pin" class="pin1 pin">
+                 <img src="./img/mahara.png" alt="pic1" class="pic1">
+
+            </div>
+            <div class="imgtop">
+                <img src="./img/pin1.png" alt="pin" class="pin2 pin">
+
+                <img src="./img/Mandalay_Hill_3.jpg" alt="pic1" class="pic2">
+
+            </div>
+            <div class="imgtop">
+                <img src="./img/pin1.png" alt="pin" class="pin3 pin">
+
+                <img src="./img/kuthodaw (2).jpg" alt="pic1" class="pic3">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

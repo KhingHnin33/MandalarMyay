@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/programming.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="shortcut icon" href="img/ancient-gate-line.png" type="image/x-icon">
+
+    <!-- linking swiperjs css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- person icon from material icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Mandalar Myay</title>
+
+    <style>
+        body{
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header ">
+        <nav class="nav container2">
+            <div class="nav_data">
+                <a href="" class="nav_logo">
+                    <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+                </a>
+
+                <div class="nav_items show-menu" id="nav_items">
+                    <ul class="nav_list">
+                        <li><a href="Home.html" class="nav_link">Home</a></li>
+                        <li><a href="About.html" class="nav_link">About</a></li>
+                        <li><a href="Attraction.html" class="nav_link">Attractions</a></li>
+                        <li><a href="Gallery.html" class="nav_link">Gallery</a></li>
+                        <li><a href="ContactUs.html" class="nav_link">ContactUs</a></li>
+
+                    </ul>
+                </div>
+                <!-- header nav right -->
+                <div class="head-right flex">
+                    <div class="search-box">
+                        <!-- Search Icon -->
+                        <div class="search-icon" id="searchToggle">
+                            <i class="ri-search-line"></i>
+                        </div>
+
+                        <!-- Dropdown Search Box -->
+                        <div class="search-dropdown" id="searchDropdown">
+                            <input type="text" placeholder="Search..." id="searchInput" />
+                            <button class="btn2">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="user-icon">
+                        <a href="SignInOut.html" class="flex user-signin">
+                            <span class="material-symbols-outlined user-icon-span">person</span>
+                            <p>Sign In</p>
+                        </a>
+
+                    </div>
+
+                    <div>
+                        <div class="nav_toggle show-icon" id="nav_toggle">
+                            <i class="ri-menu-line nav_menu"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!--header close-->
+    <!--Up Arrow-->
+    <div class="up-arrow-page">
+        <span class="up-arrow material-symbols-outlined">arrow_upward</span>
+    </div> <!-- Menu Form -->
+    <div class="menuForm" id="menuForm">
+        <div class="menu-title-gap">
+            <p class="menu-title">QUICK ACCESS</p>
+
+        </div>
+
+        <div class="quick-menu">
+            <a href="Home.html">
+                <span class="material-symbols-outlined">home</span>
+                <h3 class="h3">Home</h3>
+            </a>
+            <a href="About.html">
+                <span class="material-symbols-outlined">info</span>
+                <h3 class="h3">AboutUs</h3>
+            </a>
+            <a href="Attraction.html">
+                <i class="ri-treasure-map-line"></i>
+                <h3 class="h3">Attractions</h3>
+            </a>
+            <a href="Gallery.html">
+                <i class="ri-article-line"></i>
+                <h3 class="h3">Gallery</h3>
+            </a>
+            <a href="ContactUs.html">
+                <span class="material-symbols-outlined">contact_support</span>
+                <h3 class="h3">ContactUs</h3>
+            </a>
+
+        </div>
+
+        <div class="other-menu">
+            <a href="Logout.html" class="logout-menu"><span class="material-symbols-outlined">logout</span>
+                <h3 class="h3">Logout</h3>
+            </a>
+
+            <a href="#"><span class="material-symbols-outlined">settings</span>
+                <h3 class="h3">Settings</h3>
+            </a>
+            <a href="#"><span class="material-symbols-outlined">help</span>
+                <h3 class="h3">Help</h3>
+            </a>
+            <a href="#"> <i class="ri-feedback-line"></i>
+                <h3 class="h3">Feedback</h3>
+            </a>
+
+        </div>
+    </div>
+
+    <!--menu Form close-->
+
+    <section class="container">
+        <div class="about-content">
+            <div class="about-tabs">
+                <div class="about-tab">
+                    <ul class="list-none flex-center">
+                        <!-- =======DROPDOWN 3 -->
+
+                        <details class="link-dropdown active">
+                            <summary class="">နောက်ခံသမိုင်း</summary>
+                            <ul>
+                                <li><a href="About.html">မန္တလေးမြို့သမိုင်း</a></li>
+                                <li><a href="">ပထဝီဝင်အနေအထား</a></li>
+                                <li><a href="">မြို့တော်မြင်ကွင်း</a></li>
+                                <li><a href="">မြို့ပြလူဦးရေ</a></li>
+                                <li><a href="">ပညာရေး</a></li>
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+                        <!-- =======DROPDOWN 5 -->
+                        <details class="link-dropdown">
+                            <summary>ခရီးသွားလမ်းညွှန်</summary>
+                            <ul>
+                                <li><a href="About_kuthodaw.html">ကုသိုလ်တော်‌ဘုရား</a></li>
+                                <li><a href="About_maharmyatmuni.html">မဟာမြတ်မုနိဘုရား</a></li>
+                                <li><a href="About_ubein.html">ဦးပိန်တံတား</a></li>
+                                <li><a href="About_zaycho.html">ဈေးချို</a></li>
+                                <li><a href="">ကျောက်စိမ်းစေတီတော်</a>
+                                <li><a href="">မန္တလေးတောင်</a></li>
+                                <li><a href="">ဗားကရာဘုန်းကြီးကျောင်း</a></li>
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+                        <!-- =======DROPDOWN 3 -->
+                        <details class="link-dropdown">
+                            <summary>ယဉ်ကျေးမှုအမွေအနှစ်</summary>
+                            <ul>
+                                <li><a href="About_mdypalace.html">မန္တလေးနန်းတော်</a></li>
+
+                                <li><a href="About_ubein.html">ဦးပိန်တံတား</a></li>
+                                <li><a href="">ဗားကရာဘုန်းကြီးကျောင်း</a></li>
+                                <li><a href="">မြန်မာ့ ရက်ကန်း</a></li>
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+                        <!-- =======DROPDOWN 3 -->
+                        <details class="link-dropdown">
+                            <summary>၂၀၂၅ မြန်မာ့ငလျင်</summary>
+                            <ul>
+                                <li><a href="About_earthquake.html">ငလျင်ပြတ်ရွေ့မှု
+                                        ဖြစ်စဉ်</a></li>
+                                <li><a href="About_earthquakeResult.html">ထိခိုက်ပျက်စီးခဲ့သော
+                                        နေရာများ </a></li>
+                                <li><a href="">ပြည်တွင်း တုံ့ပြန်လုပ်ဆောင်မှုများ</a></li>
+                                <li><a href="">နောက်ဆက်တွဲ ငလျင်မျာ:</a></li>
+
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+
+                        <!-- =======DROPDOWN 3 -->
+
+                        <details class="link-dropdown">
+                            <summary>ဒေသအစားအစာများ</summary>
+                            <ul>
+                                <li><a href="">ထိုးမုန့်</a></li>
+                                <li><a href="">မုန့်ဟင်းခါး</a></li>
+                                <li><a href="">လက်ဖက်သုပ်</a></li>
+                                <li><a href="">ထမင်းပေါင်း</a></li>
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+                        <!-- =======DROPDOWN 3 -->
+                        <details class="link-dropdown">
+                            <summary>ရိုးရာပွဲတော်များ</summary>
+                            <ul>
+                                <li><a href="">ရွှေစာရံတပေါင်းပွဲတော်</a></li>
+                                <li><a href="">ကျောက်တော်ကြီးဘုရားပွဲ</a></li>
+                                <li><a href="">သင်္ကြန်ပွဲတော်</a></li>
+                                <li><a href="">မီးထွန်းပွဲ</a></li>
+                                <li><a href="">တန်ဆောင်တိုင်ပွဲ</a></li>
+                                <li><a href="">တောင်ပြုံးပွဲ</a></li>
+                                <li><a href="">Other...</a></li>
+                            </ul>
+                        </details>
+                </div>
+                <div class="map">
+                    <iframe class="map-mdy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118427.18160613222!2d95.99342229510411!3d21.94033936359561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d23f0d27411%3A0x24146be01e4e5646!2sMandalay!5e0!3m2!1sen!2smm!4v1768550513841!5m2!1sen!2smm"
+                        width="300" height="230" style="border: 0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+            <div class="about-data">
+                <div class="data-mdy">
+                    <!-- MDY content -->
+                    <div class="mdy-content">
+                        <div class="mdy-txtdata">
+                            <h2>မန္တလေးမြို့တော်</h2>
+                            <p>ယဉ်ကျေးမှုမြို့တော်/တိုင်းဒေသကြီးမြို့တော်</p>
+                        </div>
+                    </div>
+                    <div class="mdy-imgdata">
+                        <!-- Slider -->
+                        <div class="img-slider">
+                            <div class="img-list">
+                                <div class="img-item">
+                                    <img src="./img/mdy_palace.webp" alt="Palace">
+                                </div>
+                                <div class="img-item">
+                                    <img src="./img/kuthodaw.jpg" alt="Mandalay 1">
+                                </div>
+                                <div class="img-item">
+                                    <img src="./img/kuthodaw1.webp" alt="Mandalay 2">
+                                </div>
+                                <div class="img-item">
+                                    <img src="./img/mdy-p4.webp" alt="Mandalay 3">
+                                </div>
+                                <div class="img-item">
+                                    <img src="./img/atumashi.jpg" alt="Mandalay 4">
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <button id="prev">&lt;</button>
+                                <button id="next">&gt;</button>
+                            </div>
+
+                            <ul class="dots">
+                                <li class="active"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!-- Img tabs -->
+                        <div class="mdy-imgs">
+                            <img src="./img/Mandalay_Hill_3.jpg" alt="hill"> <img src="./img/Mandalay_Fort_Wall.jpg"
+                                alt="wall">
+                        </div>
+                    </div>
+                    <!-- MDY content -->
+                    <div class="about-mdy">
+                        <p class="about-mdy-p">
+                            <b>မန္တလေးမြို့တော်</b>သည် မြန်မာနိုင်ငံ၏
+                            ဒုတိယအကြီးဆုံးမြို့ဖြစ်ပြီး
+                            မန္တလေးတိုင်းဒေသကြီး၏မြို့တော်ဖြစ်သည်။ ယခင်က "ရတနာပုံ"
+                            ဟုအမည်တွင်ခဲ့ပြီး နောင်အခါ "မန္တလေးတောင်" ကိုအစွဲပြု၍ "မန္တလေး"ဟု
+                            အမည်တွင်လေသည်။ မြန်မာနိုင်ငံ၏ အလယ်ဗဟိုတွင် တည်ရှိသကဲ့သို့ပင်
+                            မြန်မာ့ယဉ်ကျေးမှုတို့ စုဝေးရာ ဒေသလည်း ဖြစ်ပြီး
+                            အိမ်နီးချင်းနိုင်ငံများနှင့် ကူးသန်းသွားလာရေးနှင့် ကုန်စည်ပို့
+                            ဆောင်ရေးတို့အတွက် အချက်အချာ ကျသည်။
+                        </p>
+                        <div class="about-imgbox">
+                            <div class="imgbox-left">
+                                <img src="./img/king.jpg" alt="king" class="mdy-imgright">
+                                <p>မန္တလေးမြို့တည်ထောင်သူ မင်းတုန်းမင်းတရားကြီးနှင့်
+                                    စကြာဒေဝီမိဖုရားခေါင်ကြီး</p>
+                            </div>
+                            <div class="imgbox-right">
+                                <h4>မန္တလေးမြို့သမိုင်းအကြောင်း</h4>
+                                <p>
+                                    မန္တလေးသည် ၁၈၈၅ ခုနှစ် သီပေါမင်း လက်ထက်
+                                    တတိယအင်္ဂလိပ်မြန်မာစစ်ပွဲ မတိုင်မီ (၁၈၆၀-၁၈၈၅)တွင် နောက်ဆုံး
+                                    ကျန်ရစ်သည့် လွတ်လပ်သော မြန်မာ့မင်းနေပြည်တော်လည်းဖြစ်သည်။ <br>
+                                    <br> မြန်မာနိုင်ငံ၏ နောက်ဆုံးမင်းနေပြည်တော်
+                                    ဖြစ်ခဲ့သည့်အလျောက် မြန်မာဟန်စစ်စစ်ယဉ်ကျေးမှု အမွေအနှစ်များ
+                                    အများအပြား ကျန်ရစ်ခါ မြို့တော်သားများက ဆက်လက်ထိန်းသိန်းလျှက်ပင်
+                                    ရှိနေကြသေးသည်။
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-imgbox">
+
+                            <div class="imgbox-right">
+                                <h4>"မန္တလေးမြို့၏မြို့နယ်များ"</h4>
+                                <p>မန္တလေးမြို့တော် စည်ပင်သာယာနယ်နိမိတ်ကို မြို့နယ်၆ခု
+                                    ၊အရံမြို့နယ် ၁ခုဖြင့် ဖွဲ့စည်းထားသည်။
+                                    မန္တလေးစည်ပင်သာယာရေးကော်မတီ နယ်နိမိတ်တွင် အောက်ဖော်ပြပါ
+                                    မြို့နယ် (၆)မြို့နယ်ပါဝင်သည်။</p>
+                                <div class="mdy-cities">
+                                    <!-- Box 1: Main Townships (4) -->
+                                    <div class="city-box">
+                                        <ul class="list-none">
+                                            <li class="flex1"><span class="img-cover"> <img src="./img/Mahaaungmye.png"
+                                                        class="img-logo">
+                                                </span>
+                                                <p>မဟာအောင်မြေမြို့နယ်</p>
+                                            </li>
+                                            <li class="flex1"><span class="img-cover"> <img
+                                                        src="./img/Aungmyaythazan.png" class="img-logo">
+                                                </span>
+                                                <p>အောင်မြေသာစံမြို့နယ်</p>
+                                            </li>
+                                            <li class="flex1"><span class="img-cover"> <img
+                                                        src="./img/Chanayethazan.png" class="img-logo">
+                                                </span>
+                                                <p>ချမ်းအေးသာစံမြို့နယ်</p>
+                                            </li>
+                                            <li class="flex1"><span class="img-cover"> <img src="./img/Chanmyathazi.png"
+                                                        class="img-logo">
+                                                </span>
+                                                <p>ချမ်းမြသာစည်မြို့နယ်</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Box 2: Remaining (3) – including Patheingyi as "အရံမြို့နယ်" -->
+                                    <div class="city-box">
+                                        <ul class="list-none">
+                                            <li class="flex1"><span class="img-cover"> <img src="./img/Pyigyitagon.png"
+                                                        class="img-logo">
+                                                </span>
+                                                <p>ပြည်ကြီးတံခွန်မြို့နယ်</p>
+                                            </li>
+                                            <li class="flex1"><span class="img-cover"> <img src="./img/Amarapura.png"
+                                                        class="img-logo">
+                                                </span>
+                                                <p>အမရပူရမြို့နယ်</p>
+                                            </li>
+                                            <li class="flex1"><span class="img-cover"> <img src="./img/Patheingyi.png"
+                                                        class="img-logo">
+                                                </span>
+                                                <p>ပုသိမ်ကြီးမြို့နယ်</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="imgbox-left">
+                                        <img src="./img/Mandalay_City_Population_Pie (1).png" alt="city"
+                                            class="mdy-imgright1">
+                                        <p>မန္တလေးမြို့တည်ထောင်သူ မင်းတုန်းမင်းတရားကြီးနှင့်
+                                            စကြာဒေဝီမိဖုရားခေါင်ကြီး</p>
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="container2 margin1">
+                            <h3>လည်ပတ်သင့်သော ရှေးဘုရင်တို့၏နန်းတော်</h3>
+                            <p>မန္တလေးမြို့ဟူသည် မြန်မာ့ယဉ်ကျေးမှု၊ သမိုင်းနှင့်
+                                စိတ်ဓာတ်အမွေအနှစ်များ စုဝေးရာ နေရာဖြစ်ပါသည်။ ထိုသို့သော
+                                မန္တလေးမြို့တွင် လည်ပတ်သူတိုင်း မဖြစ်မနေ သွားရောက်လည်ပတ်သင့်သည့်
+                                နေရာမှာ မန္တလေးနန်းတော် (Mandalay Palace) ပင်ဖြစ်ပါသည်။</p>
+                            <a class="card-button" href="About_mdypalace.html"> ဆက်ဖတ်ရန်
+                                <span class="material-symbols-outlined">arrow_right_alt</span>
+                            </a>
+                            <section class="grid1">
+                                <div class="imgbox-right">
+                                    <img src="./img/mandalay-palace (1).jpg" class="img6">
+                                </div>
+
+                                <div class="vd-box">
+
+                                    <div class="videobox">
+
+                                        <video width="350" height="300" controls preload="metadata"
+                                            style="border-radius: 12px; overflow: hidden;" outline: 2px solidred;>
+                                            <source src="./img/shwemanthu.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="Related-mdy">
+                            <div class="relate-slider">
+
+                                <h3>ထင်ရှားသော ဆက်စပ်နေရာများ</h3>
+                                <!-- Swiper 2 -->
+                                <div class="swiper about-swiper">
+                                    <div class="swiper-wrapper">
+                                        <!-- Card 1 -->
+                                        <div class="swiper-slide about-swiper-slide"
+                                            data-tags="popular historical local">
+                                            <a href="About_mdypalace.html" class="card-link"> <img
+                                                    src="./img/mdy_palace.webp" alt="mandalay palace"
+                                                    class="card-image" />
+                                                <p class="badge">Historical</p> <!-- Content below image -->
+                                                <div class="card-content">
+                                                    <div class="card-content-txt">
+                                                        <h2 class="card-title">မန္တလေး နန်းတော်</h2>
+                                                        <p class="card-txt">Mandalay</p>
+                                                    </div>
+                                                    <button class="card-button">
+                                                        ပိုပြီးဖတ်ပါ <span
+                                                            class="material-symbols-outlined">arrow_right_alt</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- card 2 -->
+                                        <div class="swiper-slide about-swiper-slide"
+                                            data-tags="popular historical nature local hidden">
+                                            <a href="About_ubein.html" class="card-link"> <img src="./img/ubein.jpg"
+                                                    alt="ubein bridge" class="card-image" />
+                                                <p class="badge">Nature</p> <!-- Content below image -->
+                                                <div class="card-content">
+                                                    <div class="card-content-txt">
+                                                        <h2 class="card-title">ဦးပိန် တံတား</h2>
+                                                        <p class="card-txt">Amarapura, Mandalay</p>
+                                                    </div>
+                                                    <button class="card-button">
+                                                        ပိုပြီးဖတ်ပါ <span
+                                                            class="material-symbols-outlined">arrow_right_alt</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- Card 1 -->
+                                        <div class="swiper-slide" data-tags="popular historical religious nature">
+                                            <a href="About_kuthodaw.html" class="card-link"> <img
+                                                    src="./img/kuthodaw.webp" alt="Kuthodaw Pagoda"
+                                                    class="card-image" />
+                                                <p class="badge">Popular</p> <!-- Content below image -->
+                                                <div class="card-content">
+                                                    <div class="card-content-txt">
+                                                        <h2 class="card-title">ကုသိုလ်တော်‌ဘုရား</h2>
+                                                        <p class="card-txt">Mandalay, Myanmar</p>
+                                                    </div>
+                                                    <button class="card-button">
+                                                        ပိုပြီးဖတ်ပါ <span
+                                                            class="material-symbols-outlined">arrow_right_alt</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- card 2 -->
+                                        <div class="swiper-slide" data-tags="popular religious">
+                                            <a href="About_maharmyatmuni.html" class="card-link"> <img
+                                                    src="./img/Mahamuni_Image.JPG" alt="maharmyatmuni Pagoda"
+                                                    class="card-image" />
+                                                <p class="badge">Historical</p> <!-- Content below image -->
+                                                <div class="card-content">
+                                                    <div class="card-content-txt">
+                                                        <h2 class="card-title">မဟာမြတ်မုနိဘုရား</h2>
+                                                        <p class="card-txt">Mandalay, Myanmar</p>
+                                                    </div>
+                                                    <button class="card-button">
+                                                        ပိုပြီးဖတ်ပါ <span
+                                                            class="material-symbols-outlined">arrow_right_alt</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- card 2 -->
+                                        <div class="swiper-slide about-swiper-slide" data-tags="popular local hidden">
+                                            <a href="About_zaycho.html" class="card-link"> <img
+                                                    src="./img/zegyo-market.jpg" alt="zegyo" class="card-image" />
+                                                <p class="badge">Local</p> <!-- Content below image -->
+                                                <div class="card-content">
+                                                    <div class="card-content-txt">
+                                                        <h2 class="card-title">ဈေးချို</h2>
+                                                        <p class="card-txt">Mandalay</p>
+                                                    </div>
+                                                    <button class="card-button">
+                                                        ပိုပြီးဖတ်ပါ <span
+                                                            class="material-symbols-outlined">arrow_right_alt</span>
+                                                    </button>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-button-prev swipe-btn"></div>
+                                    <div class="swiper-button-next swipe-btn"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- footer starts -->
+    <footer>
+        <div class="footer-items">
+
+            <div class="foot-links">
+                <div class="foot-box">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-ul">
+                        <li><a href="">Home</a></li>
+                        <li><a href=""></a>About</li>
+                        <li><a href=""></a>Attractions</li>
+                        <li><a href=""></a>News</li>
+                        <li><a href=""></a>Services</li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <h3>Contact Us</h3>
+
+                    <ul class="contact-ul">
+                        <li>
+                            <a>
+                                <i class="ri-map-pin-line"></i>Mandalay Technological University
+                            </a>
+                        </li>
+                        <li>
+
+                            <a>
+                                <i class="ri-chat-ai-line"></i> +959XXXXXXXXX
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <i class="ri-mail-unread-line"></i> admin@gmail.com
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <h3>Resources</h3>
+                    <ul class="resource-ul">
+                        <li>Customer Support</li>
+                        <li>Share your story</li>
+                        <li>Communities</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="foot-box">
+                    <div class="newsletter">
+                        <h4>WANT OUR BEST TRAVEL PLANS?</h4>
+                        <p>We send out our best plans in a weekly newsletter</p>
+
+                        <form onsubmit="event.preventDefault(); 
+                        this.reset();
+                        document.querySelector('.btn3').textContent = '✅ Subscribed!';
+
+                        alert(' ˚.🎀༘⋆ Thank you for subscribing! ˚.🎀༘⋆ \n\nမန္တလေးနှင့် ပတ်သက်သော အချက်အလက်များကို အပတ်စဉ် တစ်ပတ်လျှင် တစ်ကြိမ် သင့်အီးမေးလ်သို့ ပို့ပေးပါမည်။');
+                        setTimeout(() => {
+                            document.querySelector('.btn3').textContent = 'Subscribe';
+                        }, 5000);   
+                            ">
+                            <input type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+                            <button class="btn3 flex" type="submit"><i class="ri-telegram-2-line">
+                                </i>
+                                <span class="p1">Subscribe</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-logo">
+                <a href="" class="sub-logo2">
+                    <i class="ri-ancient-gate-line"></i>မန္တလာမြေ
+                </a>
+                <div class="foot-icons">
+                    <i class="ri-facebook-box-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-box-line"></i>
+                    <i class="ri-youtube-fill"></i>
+                    <i class="ri-tiktok-fill"></i>
+                </div>
+            </div>
+            <div class="last-foot">
+                <p>ⓒ 2026 Mandalar Myay. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        function handleCitySelect(value) {
+            if (value === 'mandalay') {
+                window.location.href = '.Attraction.html';
+            } else if (value === 'yangon') {
+                window.location.href = '/destinations/yangon';
+            } else if (value === 'bagan') {
+                window.location.href = '/destinations/bagan';
+            } else if (value === 'inle') {
+                window.location.href = '/destinations/inle';
+            } else if (value === 'other') {
+                window.location.href = '/destinations/other';
+            }
+        }
+
+        // Initialize Swipers with LOOP enabled
+        const swiperInstances = [];
+        document.querySelectorAll('.swiper').forEach(container => {
+            const swiper = new Swiper(container, {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true, // 🔥 Enable continuous looping
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },
+                    768: { slidesPerView: 1 },
+
+                    993: { slidesPerView: 1 },
+                    1000: { slidesPerView: 2 },
+
+                }
+            });
+            swiperInstances.push(swiper);
+        });
+
+    </script>
+</body>
+
+</html>
